@@ -19,7 +19,7 @@
         <p> {{post.body}} </p>
       </div>
       <div class="col-12 text-end">
-        <i class="mdi mdi-heart selectable" >  </i>
+        <i class="mdi mdi-heart selectable" > {{post.likes?.length}} </i>
       </div>
       
     </div>

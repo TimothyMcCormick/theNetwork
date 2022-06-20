@@ -61,6 +61,8 @@
           <input type="text" v-model="editable.resume" />
           <label for="">class</label>
           <input type="text" v-model="editable.class" />
+          <label for="">graduated</label>
+          <input type="checkbox" v-model="editable.graduated" />
           <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               <button type="button" class="btn btn-primary" @click="saveAccount">Save</button>

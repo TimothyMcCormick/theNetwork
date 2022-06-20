@@ -28,7 +28,7 @@ import { computed } from "@vue/reactivity"
 import ProfileSearchResult from "../components/ProfileSearchResult.vue"
 import { AppState } from "../AppState"
 export default {
-  components: { ProfileSearchResult },
+  
   setup(){
     return {
       tallAd: computed(() => AppState.tallAd),

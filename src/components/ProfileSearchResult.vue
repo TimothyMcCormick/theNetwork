@@ -10,8 +10,8 @@
         <i class="graduated-icon mdi mdi-school f-18 " >  </i>
       </div>
     <div class="col-md-4 d-flex flex-column justify-content-center">
-      <h4 class="m-2"> Summer 2018 </h4>
-    <h2 class=" m-2"> Name </h2>
+      <h4 class="m-2"> {{profile.class}} </h4>
+    <h2 class=" m-2"> {{profile.name}} </h2>
     
       </div>
       </div>
@@ -24,6 +24,7 @@
 import { computed } from "@vue/reactivity"
 import { AppState } from "../AppState"
 export default {
+  props: { profile: {type: Object, required: true} },
   setup(){
     return {
       profile: computed(() => AppState.profile)
